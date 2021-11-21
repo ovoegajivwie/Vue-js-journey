@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic with vue.js</title>
+    <script src="./vue.js"></script>
+    <link rel="stylesheet" href="./arithmetic.css">
+</head>
+<body>
+    <header> <h1>Arithmetics with Vue.js</h1> </header>
+    <div id="calculations">
+        <div class="input">
+        <input type="number" v-model="num1" placeholder="Enter number">
+        <input type="number" v-model="num2" placeholder="Enter number">
+    </div>
+        <button @click="calculate" >Calculate</button>
+        <div class="display">
+        <h1>Addition <div id="displayalt">{{total1}}</div></h1>
+        <h1>Substraction <div id="displayalt">{{total2}}</div></h1>
+        <h1>Division <div id="displayalt">{{total3}}</div></h1>
+        <h1>Multiplication <div id="displayalt">{{total4}}</div></h1>
+    </div>
+
+
+
+    </div>
+
+    <script src="./arithmetic.js"></script>
+    
+</body>
+</html>
